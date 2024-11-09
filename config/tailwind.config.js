@@ -10,6 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        main: ['Crimson Pro', ...defaultTheme.fontFamily.sans],
+        header: ['Playlist Script', ...defaultTheme.fontFamily.sans],
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
     },
