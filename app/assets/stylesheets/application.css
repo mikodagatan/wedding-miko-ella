@@ -8,7 +8,11 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
- 
- body {
+
+body {
   overflow-x: hidden;
- }
+}
+
+html {
+  scroll-behavior: smooth;
+}

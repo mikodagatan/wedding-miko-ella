@@ -31,6 +31,8 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/slider' do %>
+      <%= yield %>
+    <% end %>
   </body>
 </html>
