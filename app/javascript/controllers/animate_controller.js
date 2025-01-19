@@ -3,6 +3,7 @@ import { gsap } from "gsap"
 
 export default class extends Controller {
   connect() {
+    console.log('animation connected')
     const timeline = gsap.timeline({
       defaults: {
         duration: 1,
@@ -29,7 +30,11 @@ export default class extends Controller {
     const timeline2 = gsap.timeline({ paused: true })
 
     timeline2
-      .to("#ella1", { opacity: 1, x: 0, duration: 0.3, ease: "sine.inOut" })
+      .to("#ella1", { opacity: 1, x: 0, duration: 0.5, ease: "none" })
+      .to("#text1", { opacity: 1, x: 0, duration: 0.5, ease: "sine.inOut" })
+      .to("#ella2", { opacity: 1, x: 0, duration: 0.5, ease: "none" })
+      .to("#text2", { opacity: 1, x: 0, duration: 0.5, ease: "sine.inOut" })
+
 
 
 

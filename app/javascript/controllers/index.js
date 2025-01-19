@@ -7,9 +7,6 @@ import { application } from "./application"
 import AnimateController from "./animate_controller"
 application.register("animate", AnimateController)
 
-
 import SliderController from "./slider_controller"
 application.register("slider", SliderController)
 
-import ScrollIdController from "./scroll_id_controller"
-application.register("scrollId", ScrollIdController)

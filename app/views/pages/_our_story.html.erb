@@ -5,21 +5,28 @@
     </h1>
   </div>
   <div class="flex justify-between lg:justify-around">
-    <p class="w-[50%] px-2 py-3 text-xs lg:text-base">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat diam mauris, eget auctor ex volutpat at. In orci sapien, consequat ut finibus sed, auctor non lorem. Phasellus non porta tortor, vel molestie felis. Etiam vitae ex leo. Nullam tempor, felis a laoreet vestibulum, est arcu iaculis eros, blandit dapibus felis lorem laoreet odio. Praesent vel nibh ligula. Sed convallis, tortor et hendrerit mattis, est mauris finibus turpis, non dictum arcu turpis ut urna.
-    </p>
+    <div class="w-[48%]">
+       <p id="text1" class=" px-2 py-3 text-xs lg:text-base opacity-0 translate-x-[-30px]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat diam mauris, eget auctor ex volutpat at. In orci sapien, consequat ut finibus sed, auctor non lorem. Phasellus non porta tortor, vel molestie felis. Etiam vitae ex leo. Nullam tempor, felis a laoreet vestibulum, est arcu iaculis eros, blandit dapibus felis lorem laoreet odio. Praesent vel nibh ligula. Sed convallis, tortor et hendrerit mattis, est mauris finibus turpis, non dictum arcu turpis ut urna.
+        </p>
+        <div id="ella1" class="overflow-hidden transition-all translate-x-[30px] opacity-0"
+        data-controller="animate">
+        <img src="<%= asset_path "wedding1.jpg" %>" class="rounded-xl"/>
+      </div>
+    </div>
+   
 
-    <div id="ella1" class="overflow-hidden transition-all w-[50%] lg:w-[20%] lg:h-screen"
+    <div id="ella1" class="overflow-hidden transition-all w-[48%] lg:w-[50%] lg:h-screen translate-x-[30px] opacity-0"
       data-controller="animate">
-      <img src="<%= asset_path "ella_cartoonized.jpg" %>" class="rounded-xl"/>
+      <img src="<%= asset_path "wedding1.jpg" %>" class="rounded-xl"/>
     </div>
   </div>
   <div class="flex justify-between lg:justify-around">
-    <div id="ella2" class="overflow-hidden transition-all w-[50%] lg:w-[30%]"
+    <div id="ella2" class="overflow-hidden transition-all w-[50%] lg:w-[30%] translate-x-[-30px] opacity-0"
       data-controller="animate">
       <img src="<%= asset_path "ella_cartoonized.jpg" %>" class="rounded-xl"/>
     </div>
-    <p class="w-[50%] px-2 py-3 text-xs">
+    <p id="text2" class="w-[50%] px-2 py-3 text-xs opacity-0 translate-x-[30px]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed placerat diam mauris, eget auctor ex volutpat at. In orci sapien, consequat ut finibus sed, auctor non lorem. Phasellus non porta tortor, vel molestie felis. Etiam vitae ex leo. Nullam tempor, felis a laoreet vestibulum, est arcu iaculis eros, blandit dapibus felis lorem laoreet odio. Praesent vel nibh ligula. Sed convallis, tortor et hendrerit mattis, est mauris finibus turpis, non dictum arcu turpis ut urna.
     </p>
   </div>

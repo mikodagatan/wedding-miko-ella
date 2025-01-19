@@ -32,6 +32,9 @@ export default class extends Controller {
 
     const currentX = event.touches ? event.touches[0].clientX : event.clientX;
     const currentY = event.touches ? event.touches[0].clientY : event.clientY;
+
+    if (this.startX > 100) return;
+
     const diffX = currentX - this.startX;
     const diffY = currentY - this.startY;
 
@@ -54,6 +57,9 @@ export default class extends Controller {
 
     const currentX = event.touches ? event.touches[0].clientX : event.clientX;
     const currentY = event.touches ? event.touches[0].clientY : event.clientY;
+
+    if (this.startX > 100) return;
+
     const diffX = currentX - this.startX;
     const diffY = currentY - this.startY;
 
@@ -127,5 +133,13 @@ export default class extends Controller {
       this.menuTarget.classList.remove("translate-x-0");
       this.overlayTarget.classList.add("hidden");
     }
+  }
+
+  scrollTo(event) {
+    event.preventDefault();
+    const id = event.target.getAttribute('href')
+    const element = document.querySelector(id)
+    this.closeMenu()
+    element.scrollIntoView({ behavior: 'smooth' })
   }
 }
