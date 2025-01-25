@@ -1,10 +1,47 @@
-<div class="pt-8 flex justify-center items-center">
-  <%= image_tag 'home1.jpg', class: 'w-[1000px]' %>
+<div class="flex justify-center items-center relative">
+  <!-- Background Image -->
+  <%= image_tag 'home1.jpg', class: 'w-full' %>
+  <%= render 'layouts/home_nav' %>
+  <!-- Logo on top of the image -->
+  <div class="absolute top-[150px] left-[200px] flex flex-col justify-center items-center pt-8">
+    <%= image_tag 'logo_white.png', class: 'w-48' %> 
+    <div class="font-logo text-white tracking-[10px] text-4xl mt-4">
+      MIKO & ELLA
+    </div>
+    <div class="font-logo text-white tracking-[8px] text-2xl mt-2">
+      07.05.25
+    </div>
+    <a href="#rsvp-form" class="font-logo font-extrabold tracking-[5px] mt-2 px-8 py-3 bg-white text-gray-900 text-opacity-50 text-lg rounded-lg shadow-lg hover:bg-black-200 transition-colors">
+    RSVP
+    </a>
+    <div class="flex gap-[40px] justify-center translate-x-[-55px] mt-[180px]">
+      <div class="flex flex-col items-center">
+        <div class="font-main font-bold text-white tracking-[4px] text-2xl mt-10">
+          CEREMONY
+        </div>
+        <div class="font-main font-extrabold text-white tracking-[4px] text-3xl mt-3">
+          2:00 PM
+        </div>
+        <div class="font-main text-white tracking-[2px] text-xl mt-5 text-center">
+          Parish of Immaculate Heart of Mary <br>(Diocese of Antipolo)<br>
+        </div>
+      </div>
+      <div class="border-l-2 border-white h-[170px] mt-12"></div>
+      <div class="flex flex-col items-center">
+        <div class="font-main font-bold text-white tracking-[4px] text-2xl mt-10">
+          RECEPTION
+        </div>
+        <div class="font-main font-extrabold text-white tracking-[4px] text-3xl mt-3">
+          5:30 PM
+        </div>
+        <div class="font-main text-white tracking-[2px] text-xl mt-5 text-center">
+          Sitio Elena Events Venue
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
 </div>
 
 <div data-controller="animate"></div>
-
-<%= render 'invitation' %>
-<%= render 'entourage' %>
-<%= render 'details' %>
-<%= render 'location' %>

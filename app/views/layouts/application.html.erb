@@ -36,8 +36,8 @@
 
   <body>
     <%= render 'layouts/slider' do %>
-      <%= render 'pages/loading' %>
-      <%= render 'layouts/home_nav' %>
+      <%= render 'pages/loading' unless current_page?(root_path) %>
+      <%= render 'layouts/home_nav' unless current_page?(root_path) %>
       <%= yield %>
     <% end %>
 
