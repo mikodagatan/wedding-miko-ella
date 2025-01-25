@@ -12,6 +12,18 @@ class PagesController < ApplicationController
   end
 
   def photos
+    @images = []
+    landscape_images = Image.where(landscape: true).to_a
+    portrait_images = Image.where(landscape: false).to_a
+
+    until (landscape_images + portrait_images).size == 0
+      3.times do
+        @images << landscape_images.pop if landscape_images.size > 0
+      end
+      3.times do
+        @images << portrait_images.pop if portrait_images.size > 0
+      end
+    end
   end
   def faqs
     @faqs = [

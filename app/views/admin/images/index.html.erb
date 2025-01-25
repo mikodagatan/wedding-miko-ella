@@ -1,0 +1,20 @@
+<h1>Upload Images</h1>
+
+<%= form_with url: admin_images_path, local: true, html: { multipart: true } do |form| %>
+  <div>
+    <%= form.label :files %>
+    <%= form.file_field :files, multiple: true %>
+  </div>
+  <div>
+    <%= form.submit "Upload" %>
+  </div>
+<% end %>
+
+<h2>Uploaded Images</h2>
+<div class="px-10 py-4 flex flex-wrap gap-4">
+  <% @images.each do |image| %>
+    <div class="w-[350px] h-[350px] overflow-hidden relative">
+      <%= image_tag url_for(image.image.variant(:thumbnail)), class: "absolute top-1/2 left-1/2 w-[150%] h-auto -translate-x-1/2 -translate-y-1/2 object-cover" if image.image.attached? %>
+    </div>
+  <% end %>
+</div>

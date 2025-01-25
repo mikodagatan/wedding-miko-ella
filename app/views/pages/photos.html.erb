@@ -1,9 +1,11 @@
 <div class='w-full flex flex-col justify-center items-center'>
   <h1 class='font-main font-3xl'>Photos</h1>
 
-  <div class="w-full px-3 flex flex-wrap">
-    <% (1..61).each do |num| %>
-      <%= image_tag "photos/#{num}.jpg", class: 'w-[300px] h-[300px]'%>
-    <% end %>
-  </div>
+  <div class="px-10 py-4 flex flex-wrap gap-4">
+  <% @images.each do |image| %>
+    <div class="w-[350px] h-[350px] overflow-hidden relative">
+      <%= image_tag url_for(image.image.variant(:thumbnail)), class: "absolute top-1/2 left-1/2 w-[150%] h-auto -translate-x-1/2 -translate-y-1/2 object-cover" if image.image.attached? %>
+    </div>
+  <% end %>
+</div>
 </div>
