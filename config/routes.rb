@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   root "pages#home"
   get "/our_story", to: "pages#our_story"
   get "/faqs", to: "pages#faqs"
+  get "/map", to: "pages#map"
 end

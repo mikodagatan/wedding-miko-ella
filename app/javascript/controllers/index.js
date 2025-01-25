@@ -10,5 +10,8 @@ application.register("animate", AnimateController)
 import SliderController from "./slider_controller"
 application.register("slider", SliderController)
 
-import MapController from "./map_controller"
-application.register("map", MapController)
+import ParishMapController from "./parish_map_controller"
+application.register("parish-map", ParishMapController)
+
+import ReceptionMapController from "./reception_map_controller"
+application.register("reception-map", ReceptionMapController)

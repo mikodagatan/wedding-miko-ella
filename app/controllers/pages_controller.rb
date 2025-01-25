@@ -20,7 +20,7 @@ class PagesController < ApplicationController
       },
       {
         question: "Where will the wedding take place?",
-        answer: "The ceremony will be held at Parish of the Immaculate Heart of Mary (PIHM) located at Daang Bakal Road, Brgy. Dela Paz, Antipolo City. The reception will follow at Sitio Elena Events Venue , which is located at 3B Sitio Elena Events Venue Don Celso Tuazon Ave Valley Golf Ortigas Ext. Cainta, Cainta, Philippines."
+        answer: "The ceremony will be held at Parish of the Immaculate Heart of Mary (PIHM) located at Daang Bakal Road, Brgy. Dela Paz, Antipolo City. The reception will follow at Sitio Elena Events Venue , which is located at 3B Sitio Elena Events Venue Don Celso Tuazon Ave Valley Golf Ortigas Ext., Cainta."
       },
       {
         question: "What is the dress code?",
@@ -51,5 +51,8 @@ class PagesController < ApplicationController
         answer: "Feel free to email us at ellarepre@gmail.com or call us at 09171681993. We’re happy to help!"
       }
     ]
+  end
+
+  def map
   end
 end
