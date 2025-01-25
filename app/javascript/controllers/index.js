@@ -10,3 +10,5 @@ application.register("animate", AnimateController)
 import SliderController from "./slider_controller"
 application.register("slider", SliderController)
 
+import MapController from "./map_controller"
+application.register("map", MapController)
