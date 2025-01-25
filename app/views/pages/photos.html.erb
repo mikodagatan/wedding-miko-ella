@@ -1,0 +1,9 @@
+<div class='w-full flex flex-col justify-center items-center'>
+  <h1 class='font-main font-3xl'>Photos</h1>
+
+  <div class="w-full px-3 flex flex-wrap">
+    <% (1..61).each do |num| %>
+      <%= image_tag "photos/#{num}.jpg", class: 'w-[300px] h-[300px]'%>
+    <% end %>
+  </div>
+</div>

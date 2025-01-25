@@ -8,6 +8,11 @@ class PagesController < ApplicationController
   def our_story
   end
 
+  def map
+  end
+
+  def photos
+  end
   def faqs
     @faqs = [
       {
@@ -51,8 +56,5 @@ class PagesController < ApplicationController
         answer: "Feel free to email us at ellarepre@gmail.com or call us at 09171681993. We’re happy to help!"
       }
     ]
-  end
-
-  def map
   end
 end
