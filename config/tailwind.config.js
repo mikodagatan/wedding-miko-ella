@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        main: ['Crimson Pro', ...defaultTheme.fontFamily.sans],
+        main: ['Red Hat Display', ...defaultTheme.fontFamily.sans],
         header: ['Playlist Script', ...defaultTheme.fontFamily.sans],
         logo: ['Bellefair', ...defaultTheme.fontFamily.sans],
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
