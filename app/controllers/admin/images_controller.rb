@@ -1,5 +1,6 @@
 class Admin::ImagesController < ApplicationController
   before_action :authenticate, only: [ :index ]
+  before_action :set_image, only: [ :destroy ]
   def index
     @images = []
     landscape_images = Image.where(landscape: true).to_a
@@ -31,6 +32,11 @@ class Admin::ImagesController < ApplicationController
     end
   end
 
+  def destroy
+    @image.destroy
+    redirect_to admin_images_path, notice: "Image was successfully deleted."
+  end
+
   private
 
 
@@ -39,5 +45,9 @@ class Admin::ImagesController < ApplicationController
     authenticate_or_request_with_http_basic("Restricted Access") do |username, password|
       username == "admin" && (password == ENV["PASSWORD"] || password == "secret_password")
     end
+  end
+
+  def set_image
+    @image = Image.find(params[:id])
   end
 end

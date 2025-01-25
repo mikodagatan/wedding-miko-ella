@@ -15,6 +15,7 @@
   <% @images.each do |image| %>
     <div class="w-[350px] h-[350px] overflow-hidden relative">
       <%= image_tag url_for(image.image.variant(:thumbnail)), class: "absolute top-1/2 left-1/2 w-[150%] h-auto -translate-x-1/2 -translate-y-1/2 object-cover" if image.image.attached? %>
+      <%= button_to 'Delete', admin_image_path(image), method: :delete, data: { confirm: 'Are you sure?' }, class: 'absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded' %>
     </div>
   <% end %>
 </div>

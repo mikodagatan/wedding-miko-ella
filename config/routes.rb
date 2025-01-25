@@ -17,6 +17,6 @@ Rails.application.routes.draw do
   get "/photos", to: "pages#photos"
 
   namespace :admin do
-    resources :images, only: [ :index, :create ]
+    resources :images, only: [ :index, :create, :destroy ]
   end
 end

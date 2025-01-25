@@ -1,11 +1,29 @@
-<div class='w-full flex flex-col justify-center items-center'>
-  <h1 class='font-main font-3xl'>Photos</h1>
+<div class='w-full flex flex-col justify-center items-center pt-16'>
+  <h1 class='font-main text-4xl'>Photos</h1>
 
-  <div class="px-10 py-4 flex flex-wrap gap-4">
-  <% @images.each do |image| %>
-    <div class="w-[350px] h-[350px] overflow-hidden relative">
-      <%= image_tag url_for(image.image.variant(:thumbnail)), class: "absolute top-1/2 left-1/2 w-[150%] h-auto -translate-x-1/2 -translate-y-1/2 object-cover" if image.image.attached? %>
+  <div class="w-full flex justify-center">
+    <div class="px-10 py-4 flex flex-wrap gap-4 w-[1200px]">
+      <% @images.each do |image| %>
+        <div class="w-[350px] h-[350px] overflow-hidden relative">
+          <a href="<%= url_for(image.image) %>" data-fancybox="gallery">
+            <%= image_tag url_for(image.image.variant(:thumbnail)), class: "absolute top-1/2 left-1/2 w-[150%] h-auto -translate-x-1/2 -translate-y-1/2 object-cover" if image.image.attached? %>
+          </a>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+  </div>
 </div>
-</div>
+
+<script>
+  $(document).ready(function() {
+    $('[data-fancybox="gallery"]').fancybox({
+      buttons: [
+        "zoom",
+        "slideShow",
+        "thumbs",
+        "close"
+      ],
+      loop: true
+    });
+  });
+</script>
