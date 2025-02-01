@@ -15,3 +15,6 @@ application.register("parish-map", ParishMapController)
 
 import ReceptionMapController from "./reception_map_controller"
 application.register("reception-map", ReceptionMapController)
+
+import GalleryController from "./gallery_controller"
+application.register("gallery", GalleryController)

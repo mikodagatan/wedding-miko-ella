@@ -2,7 +2,7 @@
   <h1 class='font-main text-4xl'>Pre-Wedding Photos</h1>
 
   <div class="w-full flex justify-center">
-    <div class="px-10 py-4 flex flex-wrap gap-4 w-[1200px]">
+    <div class="px-10 py-4 flex flex-wrap gap-4 w-[1200px]" data-controller="gallery">
       <% @images.each do |image| %>
         <div class="w-[350px] h-[350px] overflow-hidden relative">
           <a href="<%= url_for(image.image) %>" data-fancybox="gallery">
@@ -13,17 +13,3 @@
     </div>
   </div>
 </div>
-
-<script>
-  $(document).ready(function() {
-    $('[data-fancybox="gallery"]').fancybox({
-      buttons: [
-        "zoom",
-        "slideShow",
-        "thumbs",
-        "close"
-      ],
-      loop: true
-    });
-  });
-</script>
