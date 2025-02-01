@@ -1,4 +1,4 @@
-<nav class="w-full flex justify-center gap-12 font-main text-[18px] mt-4 <%= 'absolute top-0 z-50' if current_page?(root_path) %>">
+<nav class="w-full flex justify-center gap-12 font-main text-[18px] mt-4 hidden lg:block <%= 'absolute top-0 z-50' if current_page?(root_path) %>">
   <% link_class = "hover:underline hover:decoration-3 hover:underline-offset-[15px] transition #{'text-white font-bold' if current_page?(root_path)}" %>
   <a href="/" class="<%= link_class %>">Home</a>
   <a href="/our_story" class="<%= link_class %>">Our Story</a>
@@ -9,3 +9,16 @@
   <a href="#registry" class="<%= link_class %>" >Invitation</a>
   <a href="#rsvp" class="<%= link_class %>">RSVP</a>
 </nav>
+
+<div data-controller="slider">
+  <button class="absolute left-4 top-4 border p-2 flex justify-center items-center rounded-md cursor-pointer lg:hidden <%= current_page?(root_url) ? "border-white text-white" : "border-black text-black" %> z-20" data-action="click->slider#toggle">
+    <i class="fa fa-bars "></i>
+  </button>
+
+  <div class="bg-white h-screen w-screen absolute left-0 top-0 -translate-x-full transition-all z-30" data-slider-target="menu">
+    Hello world
+    <button class="absolute left-4 top-4 border p-2 flex justify-center items-center rounded-md cursor-pointer lg:hidden border-black text-black" data-action="click->slider#toggle">
+      <i class="fa fa-x"></i>
+    </button>
+  </div>
+</div>

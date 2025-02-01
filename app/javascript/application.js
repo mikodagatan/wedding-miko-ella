@@ -2,5 +2,4 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 
-import { Fancybox } from "@fancyapps/ui";
-import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import "@fortawesome/fontawesome-free/js/all";
