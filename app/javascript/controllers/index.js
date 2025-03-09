@@ -18,3 +18,6 @@ application.register("reception-map", ReceptionMapController)
 
 import GalleryController from "./gallery_controller"
 application.register("gallery", GalleryController)
+
+import FlipbookController from "./flipbook_controller"
+application.register("flipbook", FlipbookController)

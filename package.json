@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-free": "^6.7.2",
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^8.0.12",
-    "gsap": "^3.12.5"
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1"
   }
 }

@@ -14,6 +14,9 @@ class PagesController < ApplicationController
   def rsvp
   end
 
+  def invitation
+  end
+
   def photos
     @images = []
     landscape_images = Image.where(landscape: true).to_a

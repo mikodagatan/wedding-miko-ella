@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get "/our_story", to: "pages#our_story"
   get "/faqs", to: "pages#faqs"
   get "/rsvp", to: "pages#rsvp"
+  get "/invitation", to: "pages#invitation"
   get "/map", to: "pages#map"
   get "/photos", to: "pages#photos"
 
