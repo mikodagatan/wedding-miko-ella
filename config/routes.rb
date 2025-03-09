@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   root "pages#home"
   get "/our_story", to: "pages#our_story"
   get "/faqs", to: "pages#faqs"
+  get "/rsvp", to: "pages#rsvp"
   get "/map", to: "pages#map"
   get "/photos", to: "pages#photos"
 

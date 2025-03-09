@@ -11,6 +11,9 @@ class PagesController < ApplicationController
   def map
   end
 
+  def rsvp
+  end
+
   def photos
     @images = []
     landscape_images = Image.where(landscape: true).to_a
