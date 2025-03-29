@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   get "/map", to: "pages#map"
   get "/photos", to: "pages#photos"
   get "/dress_code", to: "pages#dress_code"
+  get "/video", to: "pages#video"
 
   namespace :admin do
     resources :images, only: [ :index, :create, :destroy ]

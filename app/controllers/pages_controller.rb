@@ -34,6 +34,9 @@ class PagesController < ApplicationController
 
   def dress_code
   end
+
+  def video
+  end
   def faqs
     @faqs = [
       {
