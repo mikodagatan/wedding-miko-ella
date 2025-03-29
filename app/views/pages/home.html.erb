@@ -1,11 +1,11 @@
-<div class="flex justify-center items-center relative w-screen h-screen overflow-hidden lg:overflow-auto lg:h-auto">
+<div class="flex justify-center items-center relative h-screen overflow-hidden lg:overflow-auto lg:h-auto">
   <!-- Background Image -->
   <%= image_tag 'home1.jpg', class: 'w-full hidden lg:block', loading: 'lazy' %>
   <%= image_tag 'home1_mobile.jpg', class: 'h-screen lg:hidden absolute top-0 left-0 max-w-md translate-x-[-5%]', loading: 'lazy' %>
   <%= render 'layouts/home_nav' %>
   <!-- Logo on top of the image -->
   <div class="absolute w-screen lg:w-auto lg:top-[150px] lg:left-[200px] flex flex-col justify-center items-center pt-16 lg:pt-8 top-0 left-0">
-    <%= image_tag 'logo_white.png', class: 'w-24 lg:w-48' %> 
+    <%= image_tag 'logo_white.png', class: 'w-24 lg:w-48' %>
     <div class="font-logo text-white tracking-[5px] lg:tracking-[10px] text-lg lg:text-4xl mt-4">
       MIKO & ELLA
     </div>
@@ -42,4 +42,3 @@
     </div>
   </div>
 </div>
-

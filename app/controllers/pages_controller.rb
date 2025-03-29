@@ -31,6 +31,9 @@ class PagesController < ApplicationController
       end
     end
   end
+
+  def dress_code
+  end
   def faqs
     @faqs = [
       {
@@ -67,7 +70,8 @@ class PagesController < ApplicationController
       },
       {
         question: "How do I RSVP?",
-        answer: "You can RSVP online at [insert RSVP link] or by contacting us directly at 09171681993."
+        answer: "You can scan or click on the QR Code below.",
+        add_qr: true
       },
       {
         question: "Who should I contact if I have more questions?",

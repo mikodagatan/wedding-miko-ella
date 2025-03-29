@@ -4,9 +4,9 @@
   <div class="w-full flex justify-center">
     <div class="px-10 py-4 flex flex-wrap gap-4 w-[1200px]" data-controller="gallery">
       <% @images.each do |image| %>
-        <div class="w-[350px] h-[350px] overflow-hidden relative">
+        <div class="w-[300px] h-[300px] lg:w-[350px] lg:h-[350px] overflow-hidden relative inline-block">
           <a href="<%= url_for(image.image) %>" data-fancybox="gallery">
-            <%= image_tag url_for(image.image.variant(:thumbnail)), class: "absolute top-1/2 left-1/2 w-[150%] h-auto -translate-x-1/2 -translate-y-1/2 object-cover" if image.image.attached? %>
+            <%= image_tag url_for(image.image.variant(:thumbnail)), class: "absolute top-1/2 left-1/2 w-[150%] h-auto -translate-x-1/2 -translate-y-1/2 object-cover " if image.image.attached? %>
           </a>
         </div>
       <% end %>

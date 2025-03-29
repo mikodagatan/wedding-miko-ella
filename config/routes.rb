@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   get "/invitation", to: "pages#invitation"
   get "/map", to: "pages#map"
   get "/photos", to: "pages#photos"
+  get "/dress_code", to: "pages#dress_code"
 
   namespace :admin do
     resources :images, only: [ :index, :create, :destroy ]
