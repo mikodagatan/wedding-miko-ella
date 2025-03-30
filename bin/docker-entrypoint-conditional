@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Check if RUN_SERVER is set to false
+if [ "$RUN_SERVER" = "false" ]; then
+  echo "Server startup skipped."
+  exit 0 # Exit without running the server
+fi
+
+# Otherwise, run the original docker-entrypoint
+/rails/bin/docker-entrypoint
