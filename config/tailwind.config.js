@@ -22,12 +22,20 @@ module.exports = {
         pastelBlue: '#bed5e7',
         pastelYellow: '#f4de95',
         pastelOrange: '#f6bd7b'
-      }
+      },
+      height: {
+        'screen-minus-logo': 'calc(100vh - 112.51px)', // Adjust 112.51px to your logo's height
+      },
     },
   },
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/container-queries'),
-  ]
+  ],
+  variants: {
+    extend: {
+      height: ['responsive'], // Ensure height utilities are responsive
+    },
+  }
 }
