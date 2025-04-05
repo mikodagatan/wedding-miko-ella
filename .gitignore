@@ -38,3 +38,4 @@
 
 /node_modules
 .overmind.sock
+/config/credentials/production.key
