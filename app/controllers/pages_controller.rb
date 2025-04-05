@@ -48,8 +48,12 @@ class PagesController < ApplicationController
         answer: "Please plan to arrive at least 15-30 minutes before the ceremony begins to allow time for seating."
       },
       {
-        question: "Where will the wedding take place?",
-        answer: "The ceremony will be held at Parish of the Immaculate Heart of Mary (PIHM) located at Daang Bakal Road, Brgy. Dela Paz, Antipolo City. The reception will follow at Sitio Elena Events Venue , which is located at 3B Sitio Elena Events Venue Don Celso Tuazon Ave Valley Golf Ortigas Ext., Cainta."
+        question: "Where will the wedding ceremony take place?",
+        answer: "The ceremony will be held at <strong>Parish of the Immaculate Heart of Mary (PIHM)</strong> located at Daang Bakal Road, Brgy. Dela Paz, Antipolo City."
+      },
+      {
+        question: "Where will the reception take place?",
+        answer: "The reception will follow at <strong>Sitio Elena Events Venue</strong>, which is located at 3B Sitio Elena Events Venue Don Celso Tuazon Ave Valley Golf Ortigas Ext., Cainta."
       },
       {
         question: "What is the dress code?",
