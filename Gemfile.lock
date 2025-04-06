@@ -259,6 +259,8 @@ GEM
     rake (13.2.1)
     rdoc (6.7.0)
       psych (>= 4.0.0)
+    redis (5.4.0)
+      redis-client (>= 0.22.0)
     redis-client (0.24.0)
       connection_pool
     regexp_parser (2.9.2)
@@ -381,6 +383,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.0)
+  redis (~> 5.4)
   rubocop-rails-omakase
   ruby-vips
   selenium-webdriver
