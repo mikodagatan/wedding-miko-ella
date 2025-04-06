@@ -70,6 +70,6 @@ RUN groupadd --system --gid 1000 rails && \
     chown -R rails:rails db log storage tmp
 USER 1000:1000
 
-# Start server via Thruster by default, this can be overwritten at runtime
+# Start server via Rails server command
 EXPOSE 80
-CMD ["sh", "-c", "./bin/thrust ./bin/rails server"]
+CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "80"]
