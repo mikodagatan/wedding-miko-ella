@@ -20,7 +20,18 @@ production:
 # google:
   service: GCS
   project: wedding
-  credentials: <%= Rails.root.join("config/gcp-key.json") %>
+  credentials:
+    type: "service_account"
+    project_id: "wedding-448909"
+    private_key_id: <%= ENV["GCP_PRIVATE_KEY_ID"] %>
+    private_key: <%= ENV["GCP_PRIVATE_KEY"] %>
+    client_email: "wedding-production@wedding-448909.iam.gserviceaccount.com"
+    client_id: "112693718628383446232"
+    auth_uri: "https://accounts.google.com/o/oauth2/auth"
+    token_uri: "https://accounts.google.com/o/oauth2/token"
+    auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
+    client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/wedding-production%40wedding-448909.iam.gserviceaccount.com"
+    universe_domain: "googleapis.com"
   bucket: wedding-<%= Rails.env %>
 
 # Use bin/rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
