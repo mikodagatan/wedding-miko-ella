@@ -72,4 +72,4 @@ USER 1000:1000
 
 # Start server via Thruster by default, this can be overwritten at runtime
 EXPOSE 80
-["sh", "-c", "./bin/thrust ./bin/rails server"]
+CMD ["sh", "-c", "./bin/thrust ./bin/rails server"]
