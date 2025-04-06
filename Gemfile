@@ -22,6 +22,7 @@ gem "jbuilder"
 gem "jsbundling-rails", "~> 1.3"
 gem "redis", "~> 5.4"
 
+gem "google-cloud-storage", "~> 1.11", require: false
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 

@@ -39,3 +39,6 @@
 /node_modules
 .overmind.sock
 /config/credentials/production.key
+
+config/gcp-key.json
+gcp-key.json*
