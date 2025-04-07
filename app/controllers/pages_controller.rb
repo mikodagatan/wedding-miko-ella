@@ -57,7 +57,7 @@ class PagesController < ApplicationController
       },
       {
         question: "What is the dress code?",
-        answer: "The dress code is formal attire, and we’d love for our guests to embrace a pastel color palette. Think soft shades like blush pink, lavender, baby blue, mint green, pastel orange or light yellow. We can’t wait to see everyone looking fabulous in these dreamy hues! Feel free to reach out if you have any questions about what to wear."
+        answer: "The dress code is formal/semi-formal attire, and we’d love for our guests to embrace a pastel color palette. Think soft shades like blush pink, lavender, baby blue, mint green, pastel orange or light yellow. We can’t wait to see everyone looking fabulous in these dreamy hues! Feel free to reach out if you have any questions about what to wear."
       },
       {
         question: "When should I RSVP by?",
