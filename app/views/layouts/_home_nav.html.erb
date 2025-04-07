@@ -16,11 +16,11 @@
     <i class="fa fa-bars"></i>
   </button>
 
-  <div class="bg-white h-screen w-screen fixed left-0 top-0 -translate-x-full transition-all z-30 flex justify-center items-center" data-slider-target="menu">
-    <button class="absolute right-4 top-4 border p-2 flex justify-center items-center rounded-md cursor-pointer lg:hidden border-black text-black" data-action="click->slider#toggle">
+  <div class="bg-white h-screen w-screen fixed left-0 top-0 -translate-x-full transition-all z-30 flex justify-center" data-slider-target="menu">
+    <button class="absolute right-4 top-4 border p-2 rounded-md cursor-pointer lg:hidden border-black text-black h-[40px] w-[40px]" data-action="click->slider#toggle">
       <i class="fa fa-x text-xs"></i>
     </button>
-    <div class="flex flex-col items-center gap-6">
+    <div class="flex flex-col gap-6 mt-[100px]">
       <% mobile_link_class = "hover:underline hover:decoration-3 hover:underline-offset-[10px] transition font-main" %>
       <%= image_tag 'logo_black.png', class: 'w-24' %>
       <div class="flex flex-col items-center gap-6 mt-0">
