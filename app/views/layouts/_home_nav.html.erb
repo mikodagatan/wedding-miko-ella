@@ -12,8 +12,8 @@
 </nav>
 
 <div data-controller="slider">
-  <button class="fixed left-4 top-4 border p-2 flex justify-center items-center rounded-md cursor-pointer lg:hidden  <%= current_page?(root_url) ? "border-white text-white bg-transparent" : "border-black text-black bg-white" %> z-20" data-action="click->slider#toggle">
-    <i class="fa fa-bars"></i>
+  <button class="fixed left-4 top-4 border p-4 flex justify-center items-center rounded-md cursor-pointer lg:hidden h-8 w-8  <%= current_page?(root_url) ? "text-gray-800 bg-white" : "border-black text-black bg-white" %> z-20" data-action="click->slider#toggle">
+    <i class="fa fa-bars h-6 w-6"></i>
   </button>
 
   <div class="bg-white h-screen w-screen fixed left-0 top-0 -translate-x-full transition-all z-30 flex justify-center" data-slider-target="menu">
